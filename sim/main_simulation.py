@@ -55,7 +55,9 @@ def run_simulation():
         plt.pause(0.05)
         
     plt.ioff()
-    plt.show()
+    print("Симуляция завершена. Закройте окно для выхода.")
+    plt.show(block=True)
 
 if __name__ == "__main__":
+    print("Запуск симуляции Swarm-Shield...")
     run_simulation()
